@@ -13,7 +13,7 @@ def largestPrimeFactor(target):
   # recalculate target and root
   def check(candidate):
     nonlocal target
-    while target % candidate == 0: #
+    while target % candidate == 0: # loop to check candidate multiple times
       factors.append(candidate)
       target = target / candidate
       root = math.sqrt(target)
